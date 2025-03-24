@@ -129,12 +129,6 @@ jobs:
     - name: CLANG/make
       run: make
       working-directory: /home/runner/work/pgagroal/pgagroal/build/
-      
-    - name: Upload Generated Documentation
-      uses: actions/upload-artifact@v4
-      with:
-        name: generated-docs
-        path: /home/runner/work/pgagroal/pgagroal/build/docs/   # Replace with the actual folder or file path of your docs
     - name: CLANG/Run pgagroal & confirm pgagroal is running
       run: |
         sudo mkdir -p /etc/pgagroal
@@ -159,6 +153,12 @@ jobs:
     - name: CLANG/Release/make
       run: make
       working-directory: /home/runner/work/pgagroal/pgagroal/build/
+    - name: Upload Generated Documentation
+      uses: actions/upload-artifact@v4
+      with:
+        name: generated-docs
+        path: /home/runner/work/pgagroal/pgagroal/build/docs/   # Replace with the actual folder or file path of your docs
+      
     - name: CLANG/Release/Run pgagroal & confirm pgagroal is running
       run: |
         sudo mkdir -p /etc/pgagroal
