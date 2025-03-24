@@ -259,3 +259,5 @@ Number of sockets the client used
 ## pgagroal_vault_self_sockets
 
 Number of sockets used by pgagroal-vault itself
+
+🚀
