@@ -171,6 +171,7 @@ jobs:
         verify_running
         verify_shutdown
       working-directory: /home/runner/work/pgagroal/pgagroal/build/src/
+      
 
 
 
