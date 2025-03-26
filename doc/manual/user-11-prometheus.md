@@ -260,4 +260,3 @@ Number of sockets the client used
 
 Number of sockets used by pgagroal-vault itself
 
-🚀
